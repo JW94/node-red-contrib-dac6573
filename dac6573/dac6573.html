@@ -1,0 +1,67 @@
+<!-- init dac6573 -->
+
+<script type="text/javascript">
+    RED.nodes.registerType('dac6573init',{
+        category: 'DAC',
+        color: '#AFFE00',
+        defaults: {
+            name: {value:""},
+        },
+        inputs:1,
+        outputs:0,
+        icon: "light.png",
+        label: function() {
+            return this.name||"dac6573init";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="dac6573init">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="dac6573init">
+    <p>A node to handle the dac6573-DAC</p>
+</script>
+
+<!-- set voltage channel dac6573 -->
+
+<script type="text/javascript">
+    RED.nodes.registerType('dac6573setVoltCh',{
+        category: 'DAC',
+        color: '#AFFE00',
+        defaults: {
+            name: {value:""},
+            channel: {value:"dac0"}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "light.png",
+        label: function() {
+            return this.name||"dac6573setVoltCh";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="dac6573setVoltCh">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-channel"><i class="icon-tag"></i> Channel</label>
+        <select type="text" id="node-input-channel">
+            <option value="dac0">CH0</option>
+            <option value="dac1">CH1</option>
+            <option value="dac2">CH2</option>
+            <option value="dac3">CH3</option>
+        </select>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="dac6573setVoltCh">
+    <p>A node to handle the dac6573-DAC</p>
+</script>

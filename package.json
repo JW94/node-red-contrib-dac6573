@@ -1,0 +1,22 @@
+{
+  "name": "dac6573",
+  "version": "0.0.1",
+  "description": "Module to controle the DAC6573",
+  "main": "i2c-dac6573.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JW94/DAC6573.git"
+  },
+  "keywords": [
+    "dac6573"
+  ],
+  "author": "Jonathan Weinert <jo.weinert@h2o-protec.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JW94/DAC6573/issues"
+  },
+  "homepage": "https://github.com/JW94/DAC6573#readme"
+}
