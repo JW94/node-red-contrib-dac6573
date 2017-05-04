@@ -1,22 +1,29 @@
 {
-  "name": "dac6573",
-  "version": "0.0.1",
+  "name": "node-red-contrib-dac6573",
+  "version": "1.0.1",
   "description": "Module to controle the DAC6573",
-  "main": "i2c-dac6573.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "dac6573",
+    "node-red"
+  ],
+  "author": "Jonathan Weinert <jo.weinert@h2o-protec.de>",
+  "license": "MIT",
+  "node-red"     : {
+    "nodes": {
+        "dac6573": "dac6573/da6573.js"
+    }
+  },
+  "dependencies": {
+    "i2c": ">= 0.2.3"
+  },
+  "engines": {
+    "node": ">=4.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/JW94/DAC6573/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JW94/DAC6573.git"
-  },
-  "keywords": [
-    "dac6573"
-  ],
-  "author": "Jonathan Weinert <jo.weinert@h2o-protec.de>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JW94/DAC6573/issues"
-  },
-  "homepage": "https://github.com/JW94/DAC6573#readme"
+  }
 }
