@@ -25,7 +25,7 @@ module.exports = function(RED) {
     }
     RED.nodes.registerType("dac6573init",initDAC6573);
     
-    function getVoltLtc2309(config) {
+    function setVoltDac6573(config) {
         RED.nodes.createNode(this,config);
         this.channel = config.channel;
         var node = this;
@@ -48,5 +48,5 @@ module.exports = function(RED) {
             }
         });
     }
-    RED.nodes.registerType("dac6573setVoltCh",getVoltLtc2309);
+    RED.nodes.registerType("dac6573setVolt",setVoltDac6573);
 }

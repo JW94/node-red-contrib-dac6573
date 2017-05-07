@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-dac6573",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Module to controle the DAC6573",
   "keywords": [
     "dac6573",
@@ -10,11 +10,12 @@
   "license": "MIT",
   "node-red"     : {
     "nodes": {
-        "dac6573": "dac6573/da6573.js"
+        "dac6573": "dac6573/dac6573.js"
     }
   },
   "dependencies": {
-    "i2c": ">= 0.2.3"
+    "i2c": ">= 0.2.3",
+    "dac6573": ">= 1.0.3"
   },
   "engines": {
     "node": ">=4.6.1"
